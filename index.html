@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="Caja">
+        <div class="P_arriba">
+            <section class="P_arriba_lados_I">
+                <button class="caja_izq" id="boton1" onclick="boton1()">
+                    <div class="tri_izq"> </div>
+                </button>
+                <button class="caja_izq">
+                    <div class="tri_izq"> </div>
+                </button>
+                <button class="caja_izq">
+                    <div class="tri_izq"> </div>
+                </button>
+                <button class="caja_izq">
+                    <div class="tri_izq"> </div>
+                </button>
+            </section>
+
+
+
+            <section class="P_arriba_medio">
+                <div class="Vista_001" id="m1" style="display: block;">
+                    <header class="titulo">
+                        <h3 class="T_01">!Bienvenido al Banco!</h3>
+                        <h5 class="T_02">Por favor digite su clave.</h5>
+                        <input class="contraseña" type="password" id="datos" disabled>
+                        <p id="mensaje"></p>
+                    </header>
+                </div>
+
+                <div class="Vista_002">
+                    <header calss="titulo_002" id="m2" style="display: none;">
+
+                        <div class="C_1" id="ecep_m2_01">Menu Principal</div>
+                        <div class="C_2"></div>
+                        <div class="caja_visual">
+                            <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                            <div class="C_O_1">RETIRO</div>
+                            <div class="C_O_1" align="right">TRANSFERENCIA</div>
+                            <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                            <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                            <div class="C_O_1">CONSULTAS</div>
+                            <div class="C_O_1" align="right"></div>
+                            <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                            <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                            <div class="C_O_1">OPERACIONES</div>
+                            <div class="C_O_1" align="right" id="ecep_m2_02">ULTIMOS MOVIMIENTOS</div>
+                            <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                            <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                            <div class="C_O_1"></div>
+                            <div class="C_O_1" align="right"></div>
+                            <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+                        </div>
+                    </header>
+
+                    <div class="Vista_003">
+                        <header calss="titulo_003" id="m3" style="display: none;">
+
+                            <div class="C_1" id="ecep_m3_01">RETIRO</div>
+                            <div class="C_2"></div>
+                            <div class="caja_visual">
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1">RETIRO SOLES</div>
+                                <div class="C_O_1" align="right">RETIRAR DOLARES</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right"></div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right"></div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right">CANCELAR</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+                            </div>
+
+                        </header>
+                    </div>
+                    <div class="Vista_004">
+                        <header calss="titulo_004" id="m4" style="display: none;">
+
+                            <div class="C_1" id="ecep_m3_01">RETIRO</div>
+                            <div class="C_2"></div>
+                            <div class="caja_visual">
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1">S/.20</div>
+                                <div class="C_O_1" align="right">S/.100</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1">S/.150</div>
+                                <div class="C_O_1" align="right">S/.200</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1">S/.300</div>
+                                <div class="C_O_1" align="right">Otras Cantidades</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"><a class="tri_ana_i"></a></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right">CANCELAR</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+                            </div>
+                        </header>
+                    </div>
+
+                    <div class="Vista_005">
+                        <header calss="titulo_005" id="m5" style="display: none;">
+
+                            <div clas="C_1" id="ecep_m5_01"  align="center">INGRESAR MONTO A RETIRAR EN MULTIPLOS DE 10</div>
+                            <div class="C_2">S/.100</div>
+                            <div class="caja_visual">
+                                <div class="C_tri_ana_i"></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right"></div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right">COMFIRMAR</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right">CORREGIR</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+
+                                <div class="C_tri_ana_i"></a></div>
+                                <div class="C_O_1"></div>
+                                <div class="C_O_1" align="right">CANCELAR</div>
+                                <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+                            </div>
+                        </header>
+                    </div>
+            </section>
+
+            <div class="Vista_006">
+                <header class="titulo_006" id="m6" style="display: none;">
+        
+                   <div id="C_1" id="ecep_m6_01" align="center">TRANSACCION PROCESADA</div>
+                   <div class="C_2">¿DESEA REALIZAR OTRA TRANSACCION?</div>
+                   <div class="caja_visual">
+                        <div class="C_tri_ana_i"></div>
+                        <div class="C_0_1"></div>
+                        <div class="C_0_1" align="right">Si</div>
+                        <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+        
+                        <div class="C_tri_ana_i"></div>
+                        <div class="C_0_1"></div>
+                        <div class="C_0_1" align="right">No</div>
+                        <div class="C_tri_ana_d"><a class="tri_ana_d"></a></div>
+                   </div>
+                </header>
+            </div>
+
+            <div class="Vista_007">
+                <header class="titulo_007" id="m7" style="display: none;">
+                
+                <div id="C_1" id="ecep_m7_01" align="center">GRACIAS, HASTA LUEGO</div>
+                <div id="C_2"></div>
+                </header>
+            </div>
+
+            <section class="P_arriba_lados_D">
+                <button class="caja_der" id="confirmar" onclick="confirmar()">
+                    <div class="tri_der"> </div>
+                </button>
+                <button class="caja_der">
+                    <div class="tri_der"> </div>
+                </button>
+                <button class="caja_der" id="boton6" onclick="boton6()">
+                    <div class="tri_der"> </div>
+                </button>
+                <button class="caja_der" id="No" onclick="No()">
+                    <div class="tri_der"> </div>
+                </button>
+            </section>
+        </div>
+
+
+        <div class="P_abajo">
+            <Section class="P_abajo_izquierda">
+                <input type="button" id="n1" class="numero" value="1" onclick="add('1')">
+                <input type="button" id="n2" class="numero" value="2" onclick="add('2')">
+                <input type="button" id="n3" class="numero" value="3" onclick="add('3')">
+                <input type="button" id="op_1" class="opciones" value="CANCEL" onclick="cancel()">
+                
+                <input type="button" id="n4" class="numero" value="4" onclick="add('4')">
+                <input type="button" id="n5" class="numero" value="5" onclick="add('5')">
+                <input type="button" id="n6" class="numero" value="6" onclick="add('6')">
+                <input type="button" id="op_2" class="opciones" value="CLEAR">
+                
+                <input type="button" id="n7" value="7" class="numero" onclick="add('7')">
+                <input type="button" id="n8" value="8" class="numero" onclick="add('8')">
+                <input type="button" id="n9" value="9" class="numero" onclick="add('9')">
+                <input type="button" id="op_3" class="opciones" value="OK" onclick="login()">
+
+                <input type="button" id="n7" value=" " class="numero" onclick="">
+                <input type="button" id="n8" value="0" class="numero" onclick="">
+                <input type="button" id="n9" value="." class="numero" onclick="">
+                <input type="button" id="op_4" class="opciones" value=" ">
+            </Section>
+
+
+            <section class="P_abajo_derecha">
+                <div id="e_1">
+                    <h4 id="nom_e_1">CARD</h2>
+                        <div class="enc_01">
+                            <div class="enc_cua_01"></div>
+                        </div>
+                </div>
+                <div id="e_1">
+                    <h4 id="nom_e_1">RECEIPT</h2>
+                        <div class="enc_01">
+                            <div class="enc_cua_01"></div>
+                        </div>
+                </div>
+                <div id="e_2">
+                    <h4 id="nom_e_1">CASH</h2>
+                        <div class="enc_02">
+                            <div class="enc_cua_02"></div>
+                        </div>
+                </div>
+                <div id="e_2">
+                    <h4 id="nom_e_1">DEPOSIT</h2>
+                        <div class="enc_02">
+                            <div class="enc_cua_02"></div>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/Principal.js"></script>
+    <script src="js/boton1.js"></script>
+    <script src="js/boton2.js"></script>
+    <script src="js/boton3.js"></script>
+    <script src="js/boton5.js"></script>
+    <script src="js/boton6.js"></script>
+</body>
+
+</html>
